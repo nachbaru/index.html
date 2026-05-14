@@ -14,7 +14,7 @@
 .hdiv{width:50px;height:1px;background:#c4a882;opacity:0.6;margin:22px 0}
 .hinfo span{font-size:11px;letter-spacing:3px;text-transform:uppercase;opacity:0.4;display:block;margin-bottom:4px}
 .hinfo strong{font-size:16px;letter-spacing:1px;font-weight:400;opacity:0.85;display:block;margin-bottom:18px}
-.bw .shr{background:#8fa8a8;position:relative;display:flex;align-items:center;justify-content:center;padding:0;overflow:visible;min-height:500px;height:500px}
+.bw .shr{background:#8fa8a8;position:relative;display:flex;align-items:center;justify-content:center;padding:0;overflow:hidden;min-height:500px;height:500px}
 .pw{position:relative;width:460px;height:520px}
 .pol{position:absolute;background:white;padding:10px 10px 38px;box-shadow:4px 8px 28px rgba(0,0,0,0.4)}
 .pol img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:grayscale(100%) contrast(1.05) brightness(1.02)}
@@ -89,9 +89,9 @@
 .reg-l h2{font-family:'Dancing Script',cursive;font-size:52px;color:#8fa8a8;margin-bottom:18px;line-height:1.1}
 .reg-l p{font-size:12px;line-height:1.9;color:#8fa8a8;opacity:0.65;max-width:380px}
 .reg-card{background:white;padding:36px 40px;border-left:3px solid #c4a882;box-shadow:0 2px 20px rgba(28,46,74,0.06)}
-.reg-iban{font-family:'Courier Prime',monospace;font-size:15px;font-weight:700;color:#8fa8a8;letter-spacing:2px;margin-bottom:8px;opacity:1}
-.reg-name-lbl{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8fa8a8;opacity:1;margin-bottom:4px}
-.reg-name-val{font-family:'Courier Prime',monospace;font-size:13px;font-weight:700;color:#8fa8a8;letter-spacing:1px;opacity:1}
+.reg-iban{font-family:'Courier Prime',monospace;font-size:15px;font-weight:700;color:#8fa8a8;letter-spacing:2px;margin-bottom:8px}
+.reg-name-lbl{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8fa8a8;opacity:0.4;margin-bottom:4px}
+.reg-name-val{font-family:'Courier Prime',monospace;font-size:13px;font-weight:700;color:#8fa8a8;letter-spacing:1px}
 .reg-note{font-size:11px;color:#8fa8a8;opacity:0.4;font-style:italic;margin-top:16px;line-height:1.7;border-top:1px solid rgba(28,46,74,0.08);padding-top:16px}
 
 /* RSVP */
@@ -115,16 +115,15 @@
   .bnav a{font-size:8px;letter-spacing:1px}
 
   /* HERO POLAROIDS - columna unica, corta y centrada */
-  .bw .sh{display:flex;flex-direction:column;min-height:auto !important;height:auto !important}
-  .bw .shr{order:1;height:340px !important;min-height:340px !important;max-height:340px !important;padding:0;display:flex;align-items:center;justify-content:flex-start;overflow:visible}
+   .bw .sh{display:flex;flex-direction:column;min-height:auto !important;height:auto !important}
+  .bw .shr{order:1;height:420px !important;min-height:420px !important;max-height:420px !important;padding:0;display:flex;align-items:center;justify-content:center;overflow:visible}
   .bw .shl{order:2;padding:36px 28px;text-align:center;align-items:center;display:flex;flex-direction:column;justify-content:center}
   .hname{font-size:52px}
   .hamp{font-size:38px}
   .hdiv{margin:16px auto}
-  .pw{position:relative;width:280px !important;height:420px !important;margin:0 auto !important;min-width:unset !important}
-  .pa{width:110px !important;height:140px !important;top:10px !important;left:10px !important;transform:rotate(-5deg)}
-  .pb{width:100px !important;height:125px !important;top:220px !important;left:140px !important;transform:rotate(5deg)}
-}
+  .pw{position:relative;width:280px !important;height:400px !important;margin:0 auto !important;min-width:unset !important}
+  .pa{width:120px !important;height:155px !important;top:10px !important;left:0px !important;transform:rotate(-5deg)}
+  .pb{width:110px !important;height:140px !important;top:190px !important;left:90px !important;transform:rotate(5deg)}
 
 
   /* NOS CASAMOS */
@@ -374,9 +373,9 @@
         <rect x="6" y="19" width="8" height="3" rx="1" fill="#c4a882" opacity="0.4"/>
       </svg>
       <div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:#8fa8a8;margin-bottom:16px">Transferencia bancaria</div>
-      <div class="reg-iban" style="color:#8fa8a8;opacity:1">ES73 1583 0001 1891 3738 3243</div>
-      <div class="reg-name-lbl" style="margin-top:12px;color:#8fa8a8;opacity:1">Beneficiarios</div>
-      <div class="reg-name-val" style="color:#8fa8a8;opacity:1">Ignacio Baru &amp; Helena Ibarbia</div>
+      <div class="reg-iban">ES73 1583 0001 1891 3738 3243</div>
+      <div class="reg-name-lbl" style="margin-top:12px">Beneficiarios</div>
+      <div class="reg-name-val">Ignacio Baru &amp; Helena Ibarbia</div>
       <div class="reg-note">Cada detalle, por pequeño que sea, nos llenará de alegría y nos ayudará a construir los recuerdos de nuestra nueva vida juntos.</div>
     </div>
   </div>
@@ -402,7 +401,7 @@
     </div>
   </div>
   <div style="display:flex;flex-direction:column;align-items:flex-start;gap:20px">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSef6pNvgt5WTpJ2ShkK5Ye_-K1_Hl067uTenFqDIBlEqtpJcQ/viewform?usp=publish-editor" target="_blank" class="rbtn" style="display:inline-block;text-decoration:none;text-align:center;padding:18px 48px;font-size:12px;color:white;font-weight:700">Confirmar asistencia →</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSef6pNvgt5WTpJ2ShkK5Ye_-K1_Hl067uTenFqDIBlEqtpJcQ/viewform?usp=publish-editor" target="_blank" class="rbtn" style="display:inline-block;text-decoration:none;text-align:center;padding:18px 48px;font-size:12px">Confirmar asistencia →</a>
   </div>
 </section>
 
