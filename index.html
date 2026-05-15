@@ -146,7 +146,7 @@
 .pa {
   width: 110px !important;
   height: 140px !important;
-  top: 5px !important;
+  top: -10px !important;
   left: 5px !important;
 }
 .pb {
@@ -178,18 +178,23 @@
     padding: 14px;
   }
   .tsvg { display: none }
-/* GALERÍA - volver a 2 columnas */
+/* GALERÍA */
 .gr-two,
 .gr-three,
 .gr-aside,
 .gr-trio-tall {
   grid-template-columns: 1fr 1fr !important;
 }
-.gr-full img { height: 180px }
-.gr-two .gi img { height: 160px }
-.gr-three .gi img { height: 160px }
-.gr-aside .gi img { height: 160px }
-.gr-trio-tall .gi img { height: 160px }
+.gr-full img,
+.gr-two .gi img,
+.gr-three .gi img,
+.gr-aside .gi img,
+.gr-trio-tall .gi img {
+  height: auto !important;
+  aspect-ratio: 4/3;
+  width: 100%;
+  object-fit: cover;
+}
   /* REGALO + RSVP */
   .sreg,
   .sr2 {
