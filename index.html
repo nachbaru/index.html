@@ -5,41 +5,23 @@
 .bnav a{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:white;text-decoration:none;opacity:0.5;font-family:'Courier Prime',monospace;cursor:pointer}
 .bnav a:hover{opacity:1} 
 
-/* HERO MÁS COMPACTO */
-  
-.bw .sh{
-  min-height:70vh;   /* antes 100vh */
-  height:auto;
-}
-
-/* TEXTO MÁS PEQUEÑO */
-.hname{
-  font-size:60px;   /* antes 82px */
-}
-
-.hamp{
-  font-size:40px;   /* antes 56px */
-}
-
-/* POLAROIDS MÁS PEQUEÑAS */
-.pw{
-  width:200px !important;
-  height:320px !important;
-}
-
-.pa{
-  width:140px !important;
-  height:180px !important;
-  top:0 !important;
-  left:20px !important;
-}
-
-.pb{
-  width:140px !important;
-  height:180px !important;
-  top:140px !important;
-  left:60px !important;
-}
+/* HERO */
+.bw .sh{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;height:100vh}
+.bw .shl{padding:60px 60px 60px 80px;display:flex;flex-direction:column;justify-content:center;background:#f5ede0}
+.htag{font-size:11px;letter-spacing:4px;text-transform:uppercase;opacity:0.4;margin-bottom:24px}
+.hname{font-family:'Dancing Script',cursive;font-size:82px;font-weight:700;line-height:1.0;color:#8aaba8;margin-bottom:0}
+.hamp{display:block;font-size:56px;color:#c4a882;font-weight:500;margin:2px 0}
+.hdiv{width:50px;height:1px;background:#c4a882;opacity:0.6;margin:22px 0}
+.hinfo span{font-size:11px;letter-spacing:3px;text-transform:uppercase;opacity:0.4;display:block;margin-bottom:4px}
+.hinfo strong{font-size:16px;letter-spacing:1px;font-weight:400;opacity:0.85;display:block;margin-bottom:18px}
+.bw .shr{background:#8aaba8;position:relative;display:flex;align-items:center;justify-content:center;padding:0;overflow:hidden}
+.pw{position:relative;width:260px !important;height:420px !important;min-width:unset !important;margin:0 auto}
+.pol{position:absolute;background:white;padding:10px 10px 38px;box-shadow:4px 8px 28px rgba(0,0,0,0.4)}
+.pol img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:grayscale(100%) contrast(1.05) brightness(1.02)}
+.pol-cap{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-family:'Dancing Script',cursive;font-size:18px;color:#8aaba8;opacity:0.7}
+.pa{width:180px !important;height:220px !important;top:10px !important;left:30px !important;transform:rotate(-4deg)}
+.pb{width:175px !important;height:215px !important;top:190px !important;left:60px !important;transform:rotate(3deg)}
+.dc{position:absolute;border-radius:50%;border:1px solid rgba(176,141,87,0.1)}
 
 /* NOS CASAMOS */
 .sc{background:#8aaba8;padding:72px 56px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
@@ -148,12 +130,10 @@
     min-height:auto !important;
   }
 
-.bw .shr{
-  height:200px; /* antes ~320 */
-}
-
-.hname{font-size:36px}
-.hamp{font-size:26px}
+  .bw .shr{
+    order:1;
+    height:260px;
+  }
 
   .bw .shl{
     order:2;
@@ -163,16 +143,6 @@
 
   .hname{font-size:42px}
   .hamp{font-size:30px}
-
-  .pw{
-  width:180px !important;
-  height:180px !important;
-}
-
-.pa, .pb{
-  width:100px !important;
-  height:130px !important;
-}
 
   /* POLAROIDS */
   .pw{
