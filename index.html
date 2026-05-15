@@ -195,6 +195,16 @@
   width: 100%;
   object-fit: cover;
 }
+
+/* La última foto de filas con 3 ocupa las 2 columnas */
+.gr-three .gi:last-child,
+.gr-trio-tall .gi:last-child {
+  grid-column: 1 / -1;
+}
+.gr-three .gi:last-child img,
+.gr-trio-tall .gi:last-child img {
+  aspect-ratio: 16/9;
+}
   /* REGALO + RSVP */
   .sreg,
   .sr2 {
