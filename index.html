@@ -111,111 +111,104 @@
 .bft .fd{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:white;opacity:0.3}
 
 @media (max-width: 768px) {
-
   /* NAV */
-  .bnav{
-    padding:10px 12px;
-    gap:10px;
+  .bnav {
+    padding: 10px 12px;
+    gap: 10px;
   }
-  .bnav a{
-    font-size:8px;
-    letter-spacing:1px;
+  .bnav a {
+    font-size: 8px;
+    letter-spacing: 1px;
   }
-
   /* HERO */
   .bw .sh {
-  height: 50vh !important;
-  min-height: unset !important;
+    height: 50vh !important;
+    min-height: unset !important;
+    overflow: hidden !important;
   }
-
-  .bw .shr{
-    order:1;
-    height:260px;
+  .bw .shr {
+    order: 1;
+    height: 50vh !important;
+    overflow: hidden !important;
   }
-
-  .bw .shl{
-    order:2;
-    padding:24px 18px !important;
-    text-align:center;
+  .bw .shl {
+    order: 2;
+    padding: 24px 18px !important;
+    text-align: center;
   }
-
-  .hname{font-size:42px}
-  .hamp{font-size:30px}
-
+  .hname { font-size: 42px }
+  .hamp { font-size: 30px }
   /* POLAROIDS */
-  .pw{
-    width:220px !important;
-    height:220px !important;
+  .pw {
+    width: 180px !important;
+    height: 200px !important;
   }
-
-  .pa{
-    width:120px !important;
-    height:150px !important;
-    top:10px !important;
-    left:0px !important;
+  .pa {
+    width: 100px !important;
+    height: 130px !important;
+    top: 10px !important;
+    left: 10px !important;
   }
-
-  .pb{
-    width:120px !important;
-    height:150px !important;
-    top:60px !important;
-    left:100px !important;
+  .pb {
+    width: 100px !important;
+    height: 130px !important;
+    top: 70px !important;
+    left: 60px !important;
   }
-
   /* NOS CASAMOS */
-  .sc{
-    display:flex;
-    flex-direction:column;
-    padding:40px 20px;
-    gap:20px;
-    text-align:center;
+  .sc {
+    display: flex !important;
+    flex-direction: column;
+    padding: 60px 20px 40px !important;
+    gap: 20px;
+    text-align: center;
+    position: relative !important;
+    z-index: 1 !important;
   }
-
-  .sc h2{font-size:30px}
-
-  .sci img{
-    height:200px;
-  }
-
+  .sc h2 { font-size: 30px }
+  .sci img { height: 200px }
   /* HORARIOS */
-  .sho{padding:40px 16px}
-
-  .tst{width:60px}
-  .ttm{font-size:14px}
-  .tnm{font-size:13px}
-
-  /* GALERÍA (CLAVE) */
-  .sg{padding:40px 10px}
-
-  .gr-full img{height:180px}
-  .gr-two .gi img{height:140px}
-  .gr-three .gi img{height:120px}
-  .gr-aside .gi img{height:140px}
-  .gr-trio-tall .gi img{height:140px}
-
+  .sho { padding: 40px 16px }
+  .tst { width: 60px }
+  .ttm { font-size: 14px }
+  .tnm { font-size: 13px }
+  .tbd {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px;
+  }
+  .tsvg { display: none }
+  /* GALERÍA */
+  .sg { padding: 40px 10px }
+  .gr-two,
+  .gr-three,
+  .gr-aside,
+  .gr-trio-tall {
+    grid-template-columns: 1fr !important;
+  }
+  .gr-full img { height: 180px }
+  .gr-two .gi img { height: 180px }
+  .gr-three .gi img { height: 180px }
+  .gr-aside .gi img { height: 180px }
+  .gr-trio-tall .gi img { height: 180px }
   /* REGALO + RSVP */
   .sreg,
-  .sr2{
-    display:flex;
-    flex-direction:column;
-    padding:40px 20px;
-    gap:20px;
-    text-align:center;
+  .sr2 {
+    display: flex !important;
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 20px;
+    text-align: center;
   }
-
   .reg-l h2,
-  .rl h2{
-    font-size:30px;
+  .rl h2 { font-size: 30px }
+  .reg-iban {
+    font-size: 11px;
+    word-break: break-all;
   }
-
-  .reg-iban{
-    font-size:11px;
-    word-break:break-all;
-  }
-
   /* FOOTER */
-  .bft{padding:24px}
-  .bft .fn{font-size:26px}
+  .bft { padding: 24px }
+  .bft .fn { font-size: 26px }
 }
 
 </style>
