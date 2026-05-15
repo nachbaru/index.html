@@ -111,57 +111,113 @@
 .bft .fd{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:white;opacity:0.3}
 
 @media (max-width: 768px) {
-  .bnav{padding:10px 12px;gap:10px}
-  .bnav a{font-size:8px;letter-spacing:1px}
 
-  /* HERO POLAROIDS - columna unica, corta y centrada */
-  {display:flex;flex-direction:column;height:auto !important;min-height:unset !important}
-  r{order:1;height:320px !important;min-height:320px !important;max-height:320px !important;min-width:unset !important;width:100% !important;padding:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
-  l{order:2;height:auto !important;min-height:unset !important;padding:24px 20px !important}
-  .hname{font-size:52px}
-  .hamp{font-size:38px}
-  .hdiv{margin:16px auto}
-  .pw{position:relative;width:300px !important;height:300px !important;min-width:unset !important;margin:0 auto}
-  .pa{width:160px !important;height:200px !important;top:20px !important;left:10px !important;transform:rotate(-5deg)}
-  .pb{width:150px !important;height:185px !important;top:80px !important;left:130px !important;transform:rotate(5deg)}
+  /* NAV */
+  .bnav{
+    padding:10px 12px;
+    gap:10px;
+  }
+  .bnav a{
+    font-size:8px;
+    letter-spacing:1px;
+  }
+
+  /* HERO */
+  .bw .sh{
+    display:flex;
+    flex-direction:column;
+    height:auto !important;
+    min-height:auto !important;
+  }
+
+  .bw .shr{
+    order:1;
+    height:260px;
+  }
+
+  .bw .shl{
+    order:2;
+    padding:24px 18px !important;
+    text-align:center;
+  }
+
+  .hname{font-size:42px}
+  .hamp{font-size:30px}
+
+  /* POLAROIDS */
+  .pw{
+    width:220px !important;
+    height:220px !important;
+  }
+
+  .pa{
+    width:120px !important;
+    height:150px !important;
+    top:10px !important;
+    left:0px !important;
+  }
+
+  .pb{
+    width:120px !important;
+    height:150px !important;
+    top:60px !important;
+    left:100px !important;
+  }
 
   /* NOS CASAMOS */
-  .sc{display:flex;flex-direction:column;padding:44px 28px;gap:28px;text-align:center}
-  .sc h2{font-size:34px}
-  .sci img{height:240px}
+  .sc{
+    display:flex;
+    flex-direction:column;
+    padding:40px 20px;
+    gap:20px;
+    text-align:center;
+  }
+
+  .sc h2{font-size:30px}
+
+  .sci img{
+    height:200px;
+  }
 
   /* HORARIOS */
-  .sho{padding:50px 16px}
-  .sechdr h2{font-size:38px}
-  .tsvg{display:none}
-  .tst{width:72px;padding:14px 8px}
-  .ttm{font-size:15px}
-  .tnm{font-size:14px}
-  .tds{font-size:10px}
-  .tbd{padding:12px}
-  .tsd{display:none}
+  .sho{padding:40px 16px}
 
-  /* GALERIA */
-  .sg{padding:44px 10px 0}
-  .gallery-grid{gap:3px}
-  .gr-aside{grid-template-columns:1fr 1fr}
-  .gr-aside .gi img{height:160px}
+  .tst{width:60px}
+  .ttm{font-size:14px}
+  .tnm{font-size:13px}
+
+  /* GALERÍA (CLAVE) */
+  .sg{padding:40px 10px}
+
+  .gr-full img{height:180px}
+  .gr-two .gi img{height:140px}
   .gr-three .gi img{height:120px}
-  .gr-two .gi img{height:160px}
-  .gr-trio-tall .gi img{height:160px}
-  .gr-full img{height:220px}
+  .gr-aside .gi img{height:140px}
+  .gr-trio-tall .gi img{height:140px}
 
-  /* REGALO Y RSVP */
-  .sreg{display:flex;flex-direction:column;padding:44px 28px;gap:28px;text-align:center}
-  .reg-l h2{font-size:36px}
-  .reg-iban{font-size:11px;word-break:break-all}
-  .sr2{display:flex;flex-direction:column;padding:44px 28px;gap:28px;text-align:center}
-  .rl h2{font-size:36px}
-  .bft{padding:28px 20px}
-  .bft .fn{font-size:28px}
-    /* AÑADIR ESTO AL FINAL */
-  l{min-height:unset !important;height:auto !important;padding:28px 28px !important}
-   bw{height:auto !important;min-height:unset !important;overflow:hidden;max-height:700px}
+  /* REGALO + RSVP */
+  .sreg,
+  .sr2{
+    display:flex;
+    flex-direction:column;
+    padding:40px 20px;
+    gap:20px;
+    text-align:center;
+  }
+
+  .reg-l h2,
+  .rl h2{
+    font-size:30px;
+  }
+
+  .reg-iban{
+    font-size:11px;
+    word-break:break-all;
+  }
+
+  /* FOOTER */
+  .bft{padding:24px}
+  .bft .fn{font-size:26px}
 }
 
 </style>
